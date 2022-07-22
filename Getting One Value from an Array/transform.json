@@ -4,7 +4,7 @@
         "spec": {
             "func": {
                 "streetNameNumber": "=join(', ',@(1,streetName),@(1,number))",
-                // the func.name field from the input is splitted in an array inside the "names" field...
+                "0_comment": "the func.name field from the input is splitted in an array inside the names field...",
                 "names": "=split('[ ]',@(1,name))"
             }
         }
@@ -14,7 +14,7 @@
         "spec": {
             "func": {
                 "id": "hired.REF_RH",
-                // ... and I want the final func.names field to be the first element of that array...
+                "0_comment": "// ... and I want the final func.names field to be the first element of that array...",
                 "names": {
                     "0": "hired.name"
                 },
