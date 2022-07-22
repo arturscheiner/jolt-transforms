@@ -1,0 +1,33 @@
+[
+    {
+      "operation": "shift",
+      "spec": {
+        "userinfo": {
+          "*": "&"
+        },
+        "body": {
+          "list": {
+            "*": {
+              "dt": "forecast[&1].timestamp",
+              "dt_txt": "forecast[&1].date",
+              "@(main.temp)": "forecast[&1].temp",
+              "@(main.temp_min)": "forecast[&1].minTemperature",
+              "@(main.temp_max)": "forecast[&1].maxTemperature",
+              "@(weather[0].main)": "forecast[&1].weatherMain",
+              "@(weather[0].description)": "forecast[&1].weatherDescription"
+            }
+          }
+        }
+      }
+    },
+    {
+      "operation": "modify-default-beta",
+      "spec": {
+        "forecast": {
+          "*": {
+            "weatherConditions": "=concat(@(1,weatherMain),' (',@(1,weatherDescription),),)"
+          }
+        }
+      }
+    }
+  ]
