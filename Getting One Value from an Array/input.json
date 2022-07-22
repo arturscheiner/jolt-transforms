@@ -1,0 +1,26 @@
+{
+    "func": {
+        "fatherName": "Homer",
+        "country": "Brazil",
+        "zipCode": "99300-000",
+        "identityDoc": "177.508.801-42",
+        "city": "Soledade",
+        "motherName": "Pippy",
+        "birthDate": "1991-05-27",
+        "number": "5",
+        "streetName": "asdfasdf",
+        "positionId": "3",
+        "erpIntegration": false,
+        "name": "Homer Minogue",
+        "id": 127,
+        "position": "Analyst"
+    },
+    "cep": {
+        "bairro": "",
+        "cep": "99300000",
+        "complemento": "",
+        "localidade": "Soledade",
+        "logradouro": "",
+        "uf": "RS"
+    }
+}
