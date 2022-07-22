@@ -1,0 +1,15 @@
+{
+    "components": {
+      "values": {
+        "value1": {
+          "$path": "1/2/3/bear"
+        },
+        "value2": {
+          "$path": "1/2/3/cat"
+        },
+        "value3": {
+          "$path": "1/2/3/lion"
+        }
+      }
+    }
+  }

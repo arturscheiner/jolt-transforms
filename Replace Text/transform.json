@@ -1,0 +1,28 @@
+[
+    {
+      "operation": "modify-overwrite-beta",
+      "spec": {
+        "components": {
+          "values": {
+            "*": {
+              "temp": "=split('/',@(1,\\$path))",
+              "last_element": "=lastElement(@(1,temp))",
+              "\\$path": "=concat(#/myvalue/,@(1,last_element))"
+            }
+          }
+        }
+      }
+    },
+    {
+      "operation": "shift",
+      "spec": {
+        "components": {
+          "values": {
+            "*": {
+              "\\$path": "components.values.&1.&"
+            }
+          }
+        }
+      }
+    }
+  ]
