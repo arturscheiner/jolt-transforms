@@ -1,0 +1,54 @@
+[
+    {
+      "operation": "modify-overwrite-beta",
+      "spec": {
+        "person": {
+          "streetNameNumber": "=join(', ',@(1,streetName),@(1,number))",
+          "0_comment": "the func.name field from the input is splitted in an array inside the names field...",
+          "names": "=split('[ ]',@(1,name))",
+          "zipCode": "=split('-',@(1,zipCode))",
+          "final_zipCode": "=join('',@(1,zipCode))",
+          "position": "=toLower(@(1,position))",
+          "remove_slash_identityDoc": "=split('-',@(1,identityDoc))",
+          "join_identityDoc": "=join('',@(1,remove_slash_identityDoc))",
+          "remove_dots_identityDoc": "=split('\\.',@(1,join_identityDoc))",
+          "identityDoc": "=join('',@(1,remove_dots_identityDoc))"
+        }
+      }
+      },
+    {
+      "operation": "shift",
+      "spec": {
+        "person": {
+          "id": "hired.REF_RH",
+          "names": {
+            "0": "hired.firstName",
+            "1": "hired.lastName"
+          },
+          "lastName": "hired.lastName",
+          "identityDoc": "hired.personIdentifier",
+          "birthDate": "hired.&",
+          "country": "hired.&",
+          "city": "hired.town",
+          "final_zipCode": "hired.postalCode",
+          "streetNameNumber": "hired.address",
+          "position": "hired.role",
+          "positionId": {
+            "1": {
+              "#25": "hired.roleId"
+            },
+            "2": {
+              "#30": "hired.roleId"
+            },
+            "3": {
+              "#40": "hired.roleId"
+            }
+          },
+          "motherName": "hired.&",
+          "fatherName": "hired.&",
+          "erpIntegration": "hired.creationDate"
+        }
+      }
+      }
+  ]
+  

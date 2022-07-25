@@ -1,0 +1,37 @@
+{
+    "status": 200,
+    "statusMessage": "",
+    "body": {
+      "bairro": "",
+      "cep": "11740000",
+      "complemento": "",
+      "localidade": "Itanhaém",
+      "logradouro": "Rua Genobeba",
+      "uf": "SP"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "Authorization",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "content-type": "application/json",
+      "date": "Sun, 24 Jul 2022 21:38:21 GMT",
+      "via": "1.1 google",
+      "x-digibee-trace-id": "6b6b4e5f-687d-43bc-a8c4-1b1aaa00bd2f"
+    },
+    "person": {
+      "fatherName": "Raffaello",
+      "country": "Brazil",
+      "zipCode": "11740-000",
+      "identityDoc": "723.928.204-69",
+      "city": "",
+      "motherName": "Ernestine",
+      "birthDate": "1991-04-24",
+      "number": "738",
+      "streetName": "",
+      "positionId": "1",
+      "erpIntegration": false,
+      "name": "Raffaello Muldoon",
+      "id": 1,
+      "position": "Tech Lead"
+    }
+  }

@@ -1,0 +1,18 @@
+{
+    "person": {
+      "fatherName": "Raffaello",
+      "country": "Brazil",
+      "zipCode": "11740-000",
+      "identityDoc": "723.928.204-69",
+      "city": "Sáo Paulo",
+      "motherName": "Ernestine",
+      "birthDate": "1991-04-24",
+      "number": "738",
+      "streetName": "Rua dos Tamois",
+      "positionId": "3",
+      "erpIntegration": false,
+      "name": "Raffaello Muldoon",
+      "id": 1,
+      "position": "Tech Lead"
+    }
+  }

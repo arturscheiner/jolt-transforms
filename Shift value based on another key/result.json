@@ -1,0 +1,19 @@
+{
+    "person" : {
+      "city" : "Itanhaém",
+      "streetName" : "Rua Genobeba",
+      "fatherName" : "Raffaello",
+      "country" : "Brazil",
+      "zipCode" : "11740-000",
+      "identityDoc" : "723.928.204-69",
+      "motherName" : "Ernestine",
+      "birthDate" : "1991-04-24",
+      "number" : "738",
+      "positionId" : "1",
+      "erpIntegration" : false,
+      "name" : "Raffaello Muldoon",
+      "id" : 1,
+      "position" : "Tech Lead"
+    }
+  }
+  

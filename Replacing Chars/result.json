@@ -1,0 +1,18 @@
+{
+    "hired" : {
+      "REF_RH" : 1,
+      "firstName" : "Raffaello",
+      "lastName" : "Muldoon",
+      "personIdentifier" : "72392820469",
+      "birthDate" : "1991-04-24",
+      "country" : "Brazil",
+      "town" : "Sáo Paulo",
+      "postalCode" : "11740000",
+      "address" : "Rua dos Tamois, 738",
+      "role" : "tech lead",
+      "roleId" : "40",
+      "motherName" : "Ernestine",
+      "fatherName" : "Raffaello",
+      "creationDate" : false
+    }
+  }

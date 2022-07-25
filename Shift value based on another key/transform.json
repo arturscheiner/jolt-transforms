@@ -1,0 +1,19 @@
+[
+    {
+      "operation": "shift",
+      "spec": {
+        "person": {
+          "*": "person.&",
+          "@(1,body.localidade)": "person.city",
+          "city": {
+            "0": "person.city"
+          },
+          "@(1,body.logradouro)": "person.streetName",
+          "streetName": {
+            "0": "person.streetName"
+          }
+        }
+      }
+    }
+  ]
+  
