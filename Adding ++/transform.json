@@ -1,0 +1,9 @@
+[
+    {
+      "operation": "modify-overwrite-beta",
+      "spec": {
+        // add +1 to the attempt field or Create attempt if it doesn't exist.
+        "attempt": "=intSum(@(1,attempt),1)"
+      }
+    }
+  ]
