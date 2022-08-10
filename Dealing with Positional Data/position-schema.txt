@@ -1,0 +1,28 @@
+Name							Type		Format		Position	Length
+TipoDeRegistro					Number		0			0			2
+CodigoDoParticipanteSolicitante	String					2			15
+CodigoDoInvestidorSolicitante	String					17			15
+DigitoDoInvestidorSolicitante	String					32			1
+CodigoDoParticipanteSolicitado	String					33			15
+CodigoDoInvestidorSolicitado	String					48			15
+CodigoDaCarteira				Number		0			63			5
+DescricaoDaCarteira				String					68			15
+CodigoIsinDaBase				String					83			12
+DistribuicaoDaBase				Number		0			95			3
+NomeDaSociedadeEmissora-Base	String					98			12
+Especificacao					String					110			10
+QuantidadeDeAcoesBase			Number		0.000		120			18
+DataAge							Date		yyyyMMdd	138			8
+DataDeInicioDoProvento			Date		yyyyMMdd	146			8
+NumeroDoProcesso				Number		0			154			9
+AnoDeReferenciaDoExercicio		Number		0			163			4
+DataPrevistaPPagamentoDividendo	Number		0			167			8
+ValorBrutoDoDividendo			Number		0.00		175			18
+PercentualDoImpostoDeRenda		Number		0.00		193			5
+CodigoDoImpostoDeRenda			Number		0			198			1
+InstituicaoPagadora				Number		0			199			1
+TipoDeProvento					Number		0			200			3
+DescricaoDoProvento				String					203			20
+DataAquisicao					Date		yyyyMMdd	223			8
+PrecoDaAquisicao				Number		0.000000	231			15
+Reserva							String					246			754

@@ -1,0 +1,70 @@
+[
+    {
+      "operation": "shift",
+      "spec": {
+        "data": {
+          "*": {
+            "@": "data[#2].line"
+          }
+        }
+      }
+    },
+    {
+      "operation": "shift",
+      "spec": {
+        "data": {
+          "*": {
+            "line": {
+              "00IMBARQ*": {
+                "@1": "header"
+              },
+              "99IMBARQ*": {
+                "@1": "footer"
+              },
+              "*": {
+                "@1": "body[].line"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "operation": "modify-overwrite-beta",
+      "spec": {
+        "body": {
+          "*": {
+            "TipoDeRegistro": "=substring(@(1,line),0,2)",
+            "CodigoDoParticipanteSolicitante": "=substring(@(1,line),2,17)",
+            "CodigoDoInvestidorSolicitante": "=substring(@(1,line),17,32)",
+            "DigitoDoInvestidorSolicitante": "=substring(@(1,line),32,33)",
+            "CodigoDoParticipanteSolicitado": "=substring(@(1,line),33,48)",
+            "CodigoDoInvestidorSolicitado": "=substring(@(1,line),48,63)",
+            "CodigoDaCarteira": "=substring(@(1,line),63,68)",
+            "DescricaoDaCarteira": "=substring(@(1,line),68,83)",
+            "CodigoIsinDaBase": "=substring(@(1,line),83,95)",
+            "DistribuicaoDaBase": "=substring(@(1,line),95,98)",
+            "NomeDaSociedadeEmissora-Base": "=substring(@(1,line),98,110)",
+            "Especificacao": "=substring(@(1,line),110,120)",
+            "QuantidadeDeAcoesBase": "=substring(@(1,line),120,138)",
+            "DataAge": "=substring(@(1,line),138,146)",
+            "DataDeInicioDoProvento": "=substring(@(1,line),146,154)",
+            "NumeroDoProcesso": "=substring(@(1,line),154,163)",
+            "AnoDeReferenciaDoExercicio": "=substring(@(1,line),163,167)",
+            "DataPrevistaPPagamentoDividendo": "=substring(@(1,line),167,175)",
+            "ValorBrutoDoDividendo": "=substring(@(1,line),175,193)",
+            "PercentualDoImpostoDeRenda": "=substring(@(1,line),193,198)",
+            "CodigoDoImpostoDeRenda": "=substring(@(1,line),198,199)",
+            "InstituicaoPagadora": "=substring(@(1,line),199,200)",
+            "TipoDeProvento": "=substring(@(1,line),200,203)",
+            "DescricaoDoProvento": "=substring(@(1,line),203,223)",
+            "DataAquisicao": "=substring(@(1,line),223,231)",
+            "PrecoDaAquisicao": "=substring(@(1,line),231,246)",
+            "Reserva": "=substring(@(1,line),246,1000)"
+          }
+        }
+      }
+    }
+  ]
+  
+  
