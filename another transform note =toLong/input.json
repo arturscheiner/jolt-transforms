@@ -1,0 +1,91 @@
+{
+    "id": "083933",
+    "descricao": "LINGUA CG IWP ME GJ SINGAPURA",
+    "unidade": "G",
+    "NCM": {
+      "id": "02062100",
+      "descricao": "LINGUAS DE BOVINO,CONGELADAS            "
+    },
+    "bloqueado": "2",
+    "EAN13": "7899638356053",
+    "conservacao": {
+      "descricao": "Congelado"
+    },
+    "vidaUtil": {
+      "quantidade": 24,
+      "unidade": "Meses"
+    },
+    "sistemaOrigem": "Protheus",
+    "descricaoComercial": "",
+    "tipo": {
+      "id": "PA",
+      "descricao": "04-PRODUTO ACABADO"
+    },
+    "origem": {
+      "id": "000002",
+      "descricao": "NACIONAL PROPRIO"
+    },
+    "familia": {
+      "id": "000069",
+      "descricao": "LINGUA"
+    },
+    "negocio": {
+      "id": "000001",
+      "descricao": "IN NATURA"
+    },
+    "marca": {
+      "id": "007",
+      "descricao": "GJ"
+    },
+    "grupo": {
+      "id": "000001",
+      "descricao": "BOVINO"
+    },
+    "subGrupo": {
+      "id": "000003",
+      "descricao": "MIUDOS"
+    },
+    "pesoProduto": 0,
+    "nomeProdutoIngles": "TONGUE (HALAL)",
+    "nomeProdutoEspanhol": "",
+    "codEstrutCategoria": "",
+    "descricaoMarca": "",
+    "descricaoOrigem": "",
+    "pesoMedio": 0,
+    "uuid": "",
+    "periodoValidade": "",
+    "descricaoEmbalagem": "",
+    "precoDeVenda": 0,
+    "descricaoLinha": "",
+    "estoque010015": "DISPONIVEL",
+    "estoque010016": "DISPONIVEL",
+    "estoque010041": "DISPONIVEL",
+    "estoque010044": "DISPONIVEL",
+    "estoque010050": "DISPONIVEL",
+    "estoque010059": "DISPONIVEL",
+    "estoque010066": "DISPONIVEL",
+    "familiaGrupo": "",
+    "descricaoFamiliaGrupo": "",
+    "generico": "",
+    "complemento": "",
+    "servico": "",
+    "tipoAlteracao": "",
+    "status": "",
+    "contaContabil": "",
+    "margemTolerancia": "",
+    "flow": "",
+    "origemMaterial": "",
+    "ncmFormatado": "0206.21.00",
+    "grupodeProduto": "100",
+    "mercado": "MERCADO EXTERNO",
+    "descricaoMarcaMgf": "GJ",
+    "habilitacaoDeMercado": "003",
+    "observacoes": "",
+    "descricaoReduzida": "LINGUA CG IWP ME GJ SINGAPURA",
+    "integraB2C": "N",
+    "integraME": "N",
+    "integraSF": "S",
+    "integraEC": "N",
+    "integraTA": "S",
+    "marcaGerencial": "007"
+  }

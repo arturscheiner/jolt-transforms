@@ -1,0 +1,122 @@
+[
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "ACAO": "=toInteger",
+      "DATAEMISSAOZ": "=concat(@(1,DATAEMISSAO),.000Z)",
+      "DATAEMBARQUEZ": "=concat(@(1,DATAEMBARQUE),.000Z)",
+      "DATAENTREGAZ": "=concat(@(1,DATAENTREGA),.000Z)",
+      "ITENS": {
+        "*": {
+          "PRODUTO": ["=toInteger", 0],
+          "DATAPEDIDOZ": "=concat(@(1,DATAPEDIDO),.000Z)",
+          "DATAPRODUCAOMAXIMAZ": "=concat(@(1,DATAPRODUCAOMAXIMA),.000Z)",
+          "DATAPRODUCAOMINIMAZ": "=concat(@(1,DATAPRODUCAOMINIMA),.000Z)"
+        }
+      }
+    }
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "ITENS[]": {
+        "*": {
+          "STATUS": ""
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "ACAO": "acao",
+      "FILIAL": "filial",
+      "PEDIDO": "pedido",
+      "TIPOPEDIDOERP": "tipoPedidoERP",
+      "TIPOPEDIDO": "tipoPedido",
+      "CLIENTE": "cliente",
+      "STATUS": "status",
+      "TIPOFRETE": "tipoFrete",
+      "OBSERVACAO": "observacao",
+      "CODIGOBARRAS": "codigoBarras",
+      "ENDERECOENTREGA": "enderecoEntrega",
+      "DESCRICAOENDERECOENTREGA": "descricaoEnderecoEntrega",
+      "CIDADEENTREGA": "cidadeEntrega",
+      "ESTADOENTREGA": "estadoEntrega",
+      "LOGRADOUROENTREGA": "logradouroEntrega",
+      "BAIRROENTREGA": "bairroEntrega",
+      "PEDIDOCLIENTE": "pedidoCliente",
+      "CLIENTELOJA": "clienteLoja",
+      "NUMEROEXP": "numeroEXP",
+      "CLIENTEESPECIAL": "clienteEspecial",
+      "MOEDASIGLA": "moedaSigla",
+      "MOEDACOTACAO": "moedaCotacao",
+      "TIPOROTA": "tipoRota",
+      "DIRETORIA": "diretoria",
+      "DATAEMBARQUE": {
+        "": {
+          "@(2,DATAEMBARQUE)": "dataEmbarque"
+        },
+        "*": {
+          "@(2,DATAEMBARQUEZ)": "dataEmbarque"
+        }
+      },
+      "DATAENTREGA": {
+        "": {
+          "@(2,DATAENTREGA)": "dataEntrega"
+        },
+        "*": {
+          "@(2,DATAENTREGAZ)": "dataEntrega"
+        }
+      },
+      "DATAEMISSAO": {
+        "": {
+          "@(2,DATAEMISSAO)": "dataEmissao"
+        },
+        "*": {
+          "@(2,DATAEMISSAOZ)": "dataEmissao"
+        }
+      },
+      "ITENS": {
+        "*": {
+          "FILIAL": "itens[&1].filial",
+          "PEDIDO": "itens[&1].pedido",
+          "ITEM": "itens[&1].item",
+          "PRODUTO": "itens[&1].produto",
+          "UNIDADEMEDIDA": "itens[&1].unidadeMedida",
+          "QUANTIDADEKGVENDA": "itens[&1].quantidadeKGVenda",
+          "PRECOVENDA": "itens[&1].precoVenda",
+          "QUANTIDADECAIXA": "itens[&1].quantidadeCaixa",
+          "TIPOPEDIDO": "itens[&1].tipoPedido",
+          "QUANTIDADEVOLUMES": "itens[&1].quantidadeVolumes",
+          "STATUS": "itens[&1].status",
+          "OBSERVACAO": "itens[&1].observacao",
+          "DATAPEDIDO": {
+            "": {
+              "@(2,DATAPEDIDO)": "itens[&3].dataPedido"
+            },
+            "*": {
+              "@(2,DATAPEDIDOZ)": "itens[&3].dataPedido"
+            }
+          },
+          "DATAPRODUCAOMINIMA": {
+            "": {
+              "@(2,DATAPRODUCAOMINIMA)": "itens[&3].dataProducaoMinima"
+            },
+            "*": {
+              "@(2,DATAPRODUCAOMINIMAZ)": "itens[&3].dataProducaoMinima"
+            }
+          },
+          "DATAPRODUCAOMAXIMA": {
+            "": {
+              "@(2,DATAPRODUCAOMAXIMA)": "itens[&3].dataProducaoMaxima"
+            },
+            "*": {
+              "@(2,DATAPRODUCAOMAXIMAZ)": "itens[&3].dataProducaoMaxima"
+            }
+          }
+        }
+      }
+    }
+  }
+]

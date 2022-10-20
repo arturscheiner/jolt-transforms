@@ -1,0 +1,72 @@
+[
+    {
+      "operation": "default",
+      "spec": {
+        "APPLICATIONAREA": "",
+        "excluido": "",
+        "TAURA": true
+      }
+    },
+    {
+      "operation": "shift",
+      "spec": {
+        "APPLICATIONAREA": "APPLICATIONAREA",
+        "excluido": {
+          "S": {
+            "#3": "CACAO"
+          },
+          "*": {
+            "#2": "CACAO"
+          }
+        },
+        "bloqueado": {
+          "1": {
+            "#0": "CATIVO"
+          },
+          "*": {
+            "#1": "CATIVO"
+          }
+        },
+        "observacoes": "CCAMPOTEXTO",
+        "EAN13": "CCODIGOEAN",
+        "conservacao": {
+          "descricao": "CCONSERVACAO"
+        },
+        "grupodeProduto": "CGRUPODEPRODUTO",
+        "habilitacaoDeMercado": "CHABILITACAODEMERCADO",
+        "id": "CIDPRODUTO",
+        "descricaoMarcaMgf": "CMARCA",
+        "mercado": "CMERCADO",
+        "ncmFormatado": "CNCM",
+        "descricao": "CNOME",
+        "descricaoReduzida": "CNOMEREDUZIDO",
+        "unidade": {
+          "G": {
+            "#GRM": "CUNIDADEMEDIDA"
+          },
+          "L": {
+            "#LT": "CUNIDADEMEDIDA"
+          },
+          "LT": {
+            "#LAT": "CUNIDADEMEDIDA"
+          },
+          "PT": {
+            "#PCT": "CUNIDADEMEDIDA"
+          },
+          "*": {
+            "@(2,unidade)": "CUNIDADEMEDIDA"
+          }
+        },
+        "TAURA": "TAURA"
+      }
+    },
+    {
+      "operation": "modify-overwrite-beta",
+      "spec": {
+        "CCODIGOEAN": "=toLong",
+        "CATIVO": "=toInteger"
+      }
+      }
+  
+  ]
+  
